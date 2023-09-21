@@ -1,0 +1,16 @@
+#%RAML 1.0
+title: Demo API
+version: 1.0
+
+/temporary:
+  get:
+    description: Retrieve a demo resource
+    responses:
+      200:
+        description: Successful response
+        body:
+          application/json:
+            example: |
+              {
+                "message": "This is a demo endpoint."
+              }
