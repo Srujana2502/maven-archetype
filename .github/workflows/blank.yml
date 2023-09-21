@@ -29,4 +29,5 @@ jobs:
       - name: Run a one-line script
         run: |
           mvn clean install
+          mvn -B archetype:generate -DarchetypeGroupId=com.mycompany -DarchetypeArtifactId=maven-archetype-archetype -DarchetypeVersion=1.0.0-SNAPSHOT  -DgroupId=com.mycompany -DartifactId=example1 -Dversion=1.0.0
           
